@@ -1,0 +1,111 @@
+/* make sure to transfer all relevant notes over to this css file */
+
+.icon {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    stroke-width: 0;
+    stroke: currentColor;
+    fill: currentColor;
+  }
+  
+  /* ==========================================
+  Single-colored icons can be modified like so:
+  .icon-name {
+    font-size: 32px;
+    color: red;
+  }
+  ========================================== */
+  
+  .icon-bubbles2 {
+    width: 1.125em;
+  }
+
+/*css bootstrap information 
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous"> 
+
+*/
+
+
+/*javastript bundle information 
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+*/
+
+/* font-family see notes.txt
+
+css font-family selection
+font-family: 'Roboto', sans-serif;
+font-family: 'Sacramento', cursive;
+
+*/
+
+/* GENERAL RULES */
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --prim: #e7718b;
+    --sec: #26292e;
+    --tert: #c6c6d6;
+    --quart: #ffff;
+    --logoFont: 'Sacramento', cursive;
+    --textFont: 'Roboto', sans-serif;
+}
+
+.landing-img {
+    width: 100%;
+}
+
+/* HEADER */
+.header {
+    background-color: var(--sec);
+}
+.logo {
+    color: var(--quart);
+    font-family: var(--logoFont);
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300)));
+    text-transform: capitalize;
+}
+.icon-facebook, .icon-twitter, .icon-rss {
+    border: 1px solid var(--quart);
+    color: var(--sec);
+    background-color: var(--quart);
+    border-radius: 50%;
+    font-size: 25px;
+}
+/* ClOSE HEADER */
+
+
+/* MAIN */
+
+.section1 {
+    background-color: var(--prim);
+}
+.block1 {
+    color: var(--quart);
+    font-family: var(--textFont);
+}
+.product {
+    width: 300px;
+    height: 150px;
+    /* min-width: 250px;
+    min-height: 5vh; */
+    border: 6px solid var(--tert);
+    background-color: black;
+    margin: 10px;
+}
+.section2 {
+    background-color: var(--tert);
+    border-bottom: 4px solid var(--prim);
+}
+/* CLOSE MAIN */
+
+
+/* FOOTER */
+/* CLOSE FOOTER */
