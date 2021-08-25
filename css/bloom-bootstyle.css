@@ -59,7 +59,7 @@ font-family: 'Sacramento', cursive;
 }
 
 .landing-img {
-    width: 120%;
+    width: 130%;
 }
 
 /* HEADER */
@@ -69,9 +69,8 @@ font-family: 'Sacramento', cursive;
 .logo {
     color: var(--quart);
     font-family: var(--logoFont);
-    font-size: calc(40px - 10 * ((100vw - 320px) / 680)); /*what am i missing?*/
+    font-size: calc(30px + (60 - 30) * ((100vw - 300px) / (1600 - 300))); /*what am i missing?*/
     text-transform: capitalize;
-    margin: 0 7%;
 }
 @media (max-width: 767px) {
     .icon-facebook, .icon-twitter, .icon-rss {
@@ -135,7 +134,12 @@ font-family: 'Sacramento', cursive;
 .footer {
     background-color: var(--sec);
 }
+
 .social-list {
     margin-top: 20px;
+}
+
+.colophon {      /*i want this to display below my icons; try displaying column in reverse order FIRST*/
+    color: white;
 }
 /* CLOSE FOOTER */

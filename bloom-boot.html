@@ -16,9 +16,9 @@
 <body>
     <header class="header" id="header">
         <div class="inner">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
-                    <div class="col-lg-8 col-md-6 col-sm-12">
+                    <div class="col-lg-8 col-md-6 col-sm-12 text-center text-md-left">
                         <h1 class="logo">bloom landing page</h1>
                     </div>
                     <div class=" col-lg-3 col-md-6">
@@ -65,7 +65,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <div class="block block2">
                             <img src="media/croppedlaptop.png" alt="landing image" class="landing-img img-fluid">
                         </div>
@@ -155,14 +155,16 @@
     </main>
     <footer class="footer" id="footer">
         <div class="inner">
-            <section class="container-fluid">
+            <!-- i want to display colophon last BEFORE the page breaks; I know .order-12 works -->
+            <section class="container">
                 <div class="row">
-                    <div class="col-md-order-last col-md-order-last col-md-4 col-sm-12">
+                    <div class="col-md-9 order-12">
                         <div class="colophon">
                             <p class="colophon-text">Copyright &copy; 2021 Bloom Web Design &middot; All rights reserved</p>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
+                    <!-- offset-md is what I needed to use -->
+                    <div class="col-md-3 offset-md-8">
                         <nav class="bottom-nav-bar">
                             <ul class="nav justify-content-between social-list">
                                 <li class="so-list-item">
